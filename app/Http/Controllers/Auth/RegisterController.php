@@ -30,19 +30,9 @@ class RegisterController extends Controller
      * @var string
      */
 
-     protected function redirectTo(){
 
-        if(Auth::user()->user_type=='2'){
-            return ('admin/dashboard');
-        }
-        elseif(Auth::user()->user_type=='1'){
-            return ('front/rooms');
-        }
-        elseif(Auth::user()->user_type=='3'){
-            return ('custodian/dashboard');
-        }
-        
-    }
+      protected $redirectTo='/';
+
 
 
     /**
@@ -52,6 +42,10 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+            // return ('front/rooms');
+            // $this->redirectTo=route('admin.dashboard');
+        
+
         $this->middleware('guest');
     }
 

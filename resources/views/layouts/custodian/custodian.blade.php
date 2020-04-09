@@ -99,6 +99,9 @@ var result= price*0.3;
 
 </script>
 
+
+
+
 <script>
   $(function () {
 
@@ -113,6 +116,7 @@ var result= price*0.3;
     });
   });
 </script>
+
 
 </body>
 

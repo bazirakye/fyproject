@@ -15,6 +15,8 @@
 
         <div class="card card-primary">      
         	<div class="card-body col-10">
+      
+          
         		 <form method="post" action="{{route('custodian.newroom')}}" enctype="multipart/form-data" >@csrf
         		 	@if ($message = Session::get('success'))
 					<div class="alert alert-success alert-block">
@@ -112,6 +114,7 @@
                           <button type="submit" name="newroom" id="newroom" class="btn btn-primary">Add room</button>
                     </div>
         		 </form>
+            
         	</div>
         </div>
 	</section>
